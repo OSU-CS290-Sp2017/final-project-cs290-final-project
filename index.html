@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 
-	<meta charset="utf-8">
+		<meta charset="utf-8">
+		<title>Movies</title>
 
-		<title>CS290 Final Project: Game</title>
-
-    <!-- This is a stylesheet that includes the font you should use -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
-    <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 
 		<link rel="stylesheet" href="style.css" media="screen">
@@ -18,9 +14,221 @@
 	</head>
 
 	<body>
-                   
-	</body>
 
-	<script src="index.js" charset="utf-8"></script>
+		<header>
+
+      <nav class="navbar">
+       <ul class="navlist">
+			      <a href="#"><li class="item site-title"><i class="fa fa-video-camera"></i> Movies</li></a>
+						<li class="item search-movie">
+							<form method="get" action="/search" id="search">
+							  <input id="movie-search-input" type="text" size="40" placeholder="Search..." />
+							</form>
+						</li>
+      </ul>
+    </nav>
+
+    </header>
+
+		<main class="movie-container">
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg" />
+			</div>
+			<div class="text-content">
+				 <a href="#"><p class="movie-name">
+					The Avengers
+				</p></a>
+    		<p class="movie-explanation">
+					Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="http://upload2.inven.co.kr/upload/2017/05/25/bbs/i14420924317.jpg" />
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					Pirates of the Caribbean: Dead Men Tell No Tales
+				</p></a>
+				<p class="movie-explanation">
+					Captain Jack Sparrow searches for the trident of Poseidon while being pursued by an undead sea captain and his crew.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="https://cinemathequemelies.files.wordpress.com/2015/09/c3a0-travers-le-temps.jpg" />
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					about Time
+				</p></a>
+    		<p class="movie-explanation">
+			   	At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" />
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					Inception
+				</p></a>
+				<p class="movie-explanation">
+					A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="http://www.goldenglobes.com/sites/default/files/films/interstellar.jpg" />
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					Interstellar
+				</p></a>
+				<p class="movie-explanation">
+					A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="https://b-i.forbesimg.com/scottmendelson/files/2013/05/now-you-see-me-poster.jpg" />
+
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					Now You See Me
+				</p></a>
+				<p class="movie-explanation">
+					An FBI agent and an Interpol detective track a team of illusionists who pull off bank heists during their performances and reward their audiences with the money.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="http://images.moviepostershop.com/the-notebook-movie-poster-2004-1020201853.jpg" />
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					The Notebook
+				</p></a>
+				<p class="movie-explanation">
+					A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences.
+				</p>
+			</div>
+		</article>
+
+		<article class="movie">
+			<div class="movie-picture">
+				<img class="movie-img" src="https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg" />
+			</div>
+			<div class="text-content">
+				<a href="#"><p class="movie-name">
+					3 Idiots
+				</p></a>
+				<p class="movie-explanation">
+					Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them "idiots".
+				</p>
+			</div>
+		</article>
+
+	</main>
+
+	<div id="video">
+		<div class="videos">
+
+			<div class="hidden">
+ 				<button type="button" class="close-button">&times;</button>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+				<button type="button" class="close-button">&times;</button>
+				<iframe  width="560" height="315" src="https://www.youtube.com/embed/a5V5C8mEVzY" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+ 				<button type="button" class="close-button">&times;</button>
+				<iframe  width="560" height="315" src="https://www.youtube.com/embed/T7A810duHvw" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+				<button type="button" class="close-button">&times;</button>
+			<iframe  width="560" height="315" src="https://www.youtube.com/embed/8hP9D6kZseM" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+				<button type="button" class="close-button">&times;</button>
+			<iframe  width="560" height="315" src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+				<button type="button" class="close-button">&times;</button>
+			<iframe  width="560" height="315" src="https://www.youtube.com/embed/4OtM9j2lcUA" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+				<button type="button" class="close-button">&times;</button>
+			<iframe  width="560" height="315" src="https://www.youtube.com/embed/FC6biTjEyZw" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="hidden">
+				<button type="button" class="close-button">&times;</button>
+			<iframe  width="560" height="315" src="https://www.youtube.com/embed/tE_7Oz-iH80" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+		</div>
+	</div>
+
+<button type="button" id="create-movie-button"><i class="fa fa-plus"></i></button>
+
+	 <div id="modal-backdrop" class="hidden"></div>
+	 <div id="create-movie-modal" class="hidden">
+		 <div class="modal-dialog">
+
+			 <div class="modal-header">
+				 <h3>Create a Movie</h3>
+				 <button type="button" class="modal-close-button">&times;</button>
+			 </div>
+
+			 <div class="modal-body">
+				 <div class="movie-input-element">
+					 <label for="name-input">Movie Name</label>
+					<input type="text" id="name-input">
+				</div>
+				 <div class="movie-input-element">
+					 <label for="descriptio-input">Description</label>
+					 <textarea id="description-input"></textarea>
+				 </div>
+				 <div class="movie-input-element">
+					<label for="picture-input">Picture</label>
+					<textarea id="picture-input"></textarea>
+				</div>
+			 </div>
+
+			 <div class="modal-footer">
+				 <button type="button" class="modal-cancel-button">Cancel</button>
+				 <button type="button" class="modal-accept-button">Create</button>
+			 </div>
+
+		 </div>
+	 </div>
+
+  </body>
+
+	  <script src="index.js" charset="utf-8"></script>
 
 </html>
