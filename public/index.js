@@ -8,9 +8,6 @@ var ModalBack = document.getElementById('modal-backdrop');
 var Name = document.getElementById('name-input');
 var Description = document.getElementById('description-input');
 var Picture = document.getElementById('picture-input');
-
-
-
 var SearchMovie = document.getElementById('movie-search-input');
 
 SearchMovie.oninput = function() {
@@ -30,23 +27,6 @@ SearchMovie.oninput = function() {
     }
   }
 }
-/**
-document.getElementById('movie-search-input').setAttribute('oninput','searchmovie()');
-
-function searchmovie(){
-
-  var name = document.querySelectorAll('.movie-name').length;
-  var input = document.getElementById('movie-search-input').value;
-
-  for(var i =0; i < name ; i++) {
-    if(document.getElementsByClassName('movie-name')[i].innerText.includes(input))
-      document.getElementsByClassName('movie')[i].style.display="flex";
-    }else {
-      document.getElementsByClassName('movie')[i].style.display="none";
-    }
-  }
-}
-**/
 
 CreateButton.onclick = function() {
 	ModalBack.style.display = 'block';
@@ -218,3 +198,4 @@ function cancel() {
 
 ModalClose.addEventListener('click',cancel);
 ModalCancel.addEventListener('click',cancel);
+
