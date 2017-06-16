@@ -126,6 +126,10 @@ a {
   color: white;
 }
 
+.movie-name:hover {
+  color: red;
+}
+
 .movie-explanation {
   font-size: 17px;
   font-weight: 300;
