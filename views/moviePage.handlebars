@@ -1,0 +1,13 @@
+{{> header}}
+
+  <main class="movie-container">
+
+    {{#each movies}}
+        {{> movie}}
+    {{/each}}
+
+  </main>
+
+{{> playVideo}}
+
+{{> createMovieModal}}
