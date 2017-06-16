@@ -23,8 +23,8 @@ SearchMovie.oninput = function() {
     console.log(input);
     console.log(name);
 
-    if(document.getElementsByClassName('movie-name')[i].innerText.includes(input)) {
-      document.getElementsByClassName('movie')[i].style.display='flex';
+    if(document.getElementsByClassName('movie-name')[i].innerText.indexOf(input) > -1) {
+      document.getElementsByClassName('movie')[i].style.display='block';
     }else {
       document.getElementsByClassName('movie')[i].style.display='none';
     }
@@ -39,7 +39,7 @@ function searchmovie(){
   var input = document.getElementById('movie-search-input').value;
 
   for(var i =0; i < name ; i++) {
-    if(document.getElementsByClassName('movie-name')[i].innerText.includes(input)) {
+    if(document.getElementsByClassName('movie-name')[i].innerText.includes(input))
       document.getElementsByClassName('movie')[i].style.display="flex";
     }else {
       document.getElementsByClassName('movie')[i].style.display="none";
